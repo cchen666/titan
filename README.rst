@@ -6,6 +6,7 @@ README
    1. Install dependencies
 
 ::
+
    pip install ovirt-engine-sdk-python prettytable
 
 -  
@@ -17,15 +18,15 @@ README
    3. Create a ``titanrc`` to load the environment variables. You can
       appened the content in your ~/.bash_profile (MacOS) or ~/.bashrc
       (Linux)
+
 ::
 
-        # Sample environment variables that you should set
-        # export TITAN_URL='https://lab-rhevm.microsoft.rdu.com/ovirt-engine/api'
-        # export TITAN_USERNAME='adminuser@your_domain'
-        # export TITAN_PASSWORD='password'
-        # export TITAN_CA_FILE='ca.pem'
-        # export TITAN_VM_PREFIX='your_user'
-        # export TITAN_DEFAULT_TEMPLATE='your_preferred_template'
+   export TITAN_URL='https://lab-rhevm.microsoft.rdu.com/ovirt-engine/api'
+   export TITAN_USERNAME='adminuser@your_domain'
+   export TITAN_PASSWORD='password'
+   export TITAN_CA_FILE='ca.pem'
+   export TITAN_VM_PREFIX='your_user'
+   export TITAN_DEFAULT_TEMPLATE='your_preferred_template'
 
 -  
 
