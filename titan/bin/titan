@@ -2,11 +2,8 @@
 
 import sys
 import os
-sys.path.append(os.environ.get("HOME")+"/virtenv/titan/lib/python2.7/site-packages")
-sys.path.append(os.environ.get("HOME")+"/virtenv/titan/src")
-sys.path.append(os.environ.get("HOME")+"/virtenv/titan")
 
-from titanshell import main
+from titan.titanshell import main
 
 if __name__ == "__main__":
     sys.exit(main())

@@ -4,7 +4,7 @@ from vm import VmOps
 from net import NetOps
 from disk import DiskOps
 from storagedomain import StorageDomainOps
-
+from utils import Help
 
 from os import environ
 from sys import argv
@@ -48,6 +48,11 @@ def main():
         sdops = StorageDomainOps()
         parser_disklist = subparsers.add_parser('sd-list')
         parser_disklist.set_defaults(func=sdops.sd_list)
+
+    elif argv[1].startswith('-h') or argv[1].startswith('--help') or argv[1].startswith('help'):
+        help = Help()
+        parser_help = subparsers.add_parser('-blabla')
+        parser_help.set_defaults(func=help.print_help())
 
     else:
         vmops = VmOps()

@@ -41,3 +41,16 @@ class Output:
         for row in self.rows:
             self.pt.add_row(row)
         print self.pt
+
+class Help:
+    def __init__(self):
+        self.help_message='''usage: titan [-h] {start,test,stop,show,delete,list,boot,console,sd-list, net-list,net-add, net-rm, disk-list, disk-add, temp-list} ...
+
+positional arguments:
+  {start,test,stop,show,delete,list,boot,console,sd-list, net-list,net-add, net-rm, disk-list, disk-add, temp-list}
+
+optional arguments:
+  -h, --help            show this help message and exit
+'''
+    def print_help(self):
+        print self.help_message
