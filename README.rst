@@ -3,62 +3,44 @@ README
 
 -  
 
-   1. Clone the projects
+   1. Install dependencies
 
 ::
-
-   $ git config --global http.sslverify false
-   $ mkdir ~/virtenv
-   $ cd ~/virtenv
-   $ git clone https://gitlab.cee.redhat.com/cchen/titan.git
-   $ virtualenv ~/virtenv/titan
-   $ cd ~/virtenv/titan
-   $ source bin/activate
+   pip install ovirt-engine-sdk-python prettytable
 
 -  
 
-   2. Install pip packages listed in requirements.txt. If any
-      difficulites please refer to Installing.md
-
-::
-
-   $ pip list
-   Package                 Version
-   ----------------------- --------
-   enum34                  1.1.6
-   ovirt-engine-sdk-python 4.2.9
-   pip                     18.1
-   prettytable             0.7.2
-   pycurl                  7.43.0.2
-   setuptools              40.6.2
-   six                     1.11.0
-   wheel                   0.32.3
+   2. pycurl is not easy to install. Use google
 
 -  
 
-   3. Copy file ``titan`` to one of your OS paths. For example,
-      /usr/local/bin.
-
--  
-
-   4. Source ``titanrc`` to load the environment variables. You can
+   3. Create a ``titanrc`` to load the environment variables. You can
       appened the content in your ~/.bash_profile (MacOS) or ~/.bashrc
       (Linux)
+::
+
+        # Sample environment variables that you should set
+        # export TITAN_URL='https://lab-rhevm.microsoft.rdu.com/ovirt-engine/api'
+        # export TITAN_USERNAME='adminuser@your_domain'
+        # export TITAN_PASSWORD='password'
+        # export TITAN_CA_FILE='ca.pem'
+        # export TITAN_VM_PREFIX='your_user'
+        # export TITAN_DEFAULT_TEMPLATE='your_preferred_template'
 
 -  
 
-   5. Download ca.pem. Save the ca.pem to your preferred path and set
+   4. Download ca.pem. Save the ca.pem to your preferred path and set
       TITAN_CA_FILE correctly. For example, export
-      TITAN_CA_FILE=‘/Users/cchen/ca.pem’
+      TITAN_CA_FILE=‘/root/ca.pem’
 
 ::
 
-   $ wget 'lab-rhevm.gsslab.pek2.redhat.com/ovirt-engine/services/pki-resource?resource=ca-certificate&format=X509-PEM-CA' --no-check-certificate
+   $ wget '<Your RHV URL>/ovirt-engine/services/pki-resource?resource=ca-certificate&format=X509-PEM-CA' --no-check-certificate
    $ mv pki-resource\?resource\=ca-certificate\&format\=X509-PEM-CA ca.pem
 
 -  
 
-   6. Some examples
+   5. Some examples
 
 ::
 
