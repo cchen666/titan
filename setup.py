@@ -16,7 +16,7 @@ setup(
     maintainer='Chen Chen',
     maintainer_email='cchenlp@qq.com',
     license='BSD License',
-    packages=find_packages(),
+    packages='titan',
     platforms=["all"],
     url='',
     #data_files=[("/usr/local/bin","src/titan")],
