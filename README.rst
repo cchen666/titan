@@ -3,7 +3,7 @@ README
 
 -  
 
-   1. Install our code in virtualenv or user directory (not recommended to install the python package globally)
+1. Install our code in virtualenv or user directory (not recommended to install the python package globally)
 
 ::
 
@@ -21,11 +21,11 @@ README
 
 -  
 
-   2. pycurl (which is one of the dependencies) is not easy to install and the errors could be quite different for both MacOS and Linux. Use google :)
+2. pycurl (which is one of the dependencies) is not easy to install and the errors could be quite different for both MacOS and Linux. Use google :)
 
 -  
 
-   3. Create a ``titanrc`` to load the environment variables. You can
+3. Create a ``titanrc`` to load the environment variables. You can
       appened the content in your ~/.bash_profile (MacOS) or ~/.bashrc
       (Linux)
 
