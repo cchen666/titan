@@ -1,7 +1,7 @@
 README
 ------
 
-.. image:: images/ball1.gif
+.. image:: demo/titan_demo_10M.gif
 
 1. Install our code in virtualenv or user directory (not recommended to install the python package globally)
 
