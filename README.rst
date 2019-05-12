@@ -18,9 +18,7 @@ or
 
 2. pycurl (which is one of the dependencies) is not easy to install and the errors could be quite different for both MacOS and Linux. Use google :)
 
-3. Create a ``titanrc`` to load the environment variables. You can
-      appened the content in your ~/.bash_profile (MacOS) or ~/.bashrc
-      (Linux)
+3. Create a ``titanrc`` to load the environment variables. You can appened the content in your ~/.bash_profile (MacOS) or ~/.bashrc (Linux)
 
 ::
 
@@ -31,9 +29,7 @@ or
    export TITAN_VM_PREFIX='your_user'
    export TITAN_DEFAULT_TEMPLATE='your_preferred_template'
 
-4. Download ca.pem. Save the ca.pem to your preferred path and set
-      TITAN_CA_FILE correctly. For example, export
-      TITAN_CA_FILE=‘/root/ca.pem’
+4. Download ca.pem. Save the ca.pem to your preferred path and set TITAN_CA_FILE correctly. For example, export TITAN_CA_FILE='/root/ca.pem'
 
 ::
 
