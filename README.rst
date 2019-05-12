@@ -3,15 +3,25 @@ README
 
 -  
 
-   1. Install our code
+   1. Install our code in virtualenv or user directory (not recommended to install the python package globally)
 
 ::
 
+   pip install titan-rhv --user
+
+-
+
+   or
+
+::
+
+   virtualenv ~/titan-rhv
+   cd ~/titan-rhv
    pip install titan-rhv
 
 -  
 
-   2. pycurl (which is one of the dependencies) is not easy to install for both MacOS and Linux. Use google :)
+   2. pycurl (which is one of the dependencies) is not easy to install and the errors could be quite different for both MacOS and Linux. Use google :)
 
 -  
 
