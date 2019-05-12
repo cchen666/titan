@@ -15,6 +15,7 @@ or
    virtualenv ~/titan-rhv
    cd ~/titan-rhv
    pip install titan-rhv
+   ln -s ~/titan-rhv/titan/bin/titan /usr/local/bin/titan
 
 2. pycurl (which is one of the dependencies) is not easy to install and the errors could be quite different for both MacOS and Linux. Use google :)
 
@@ -26,7 +27,7 @@ or
    export TITAN_USERNAME='adminuser@your_domain'
    export TITAN_PASSWORD='password'
    export TITAN_CA_FILE='ca.pem'
-   export TITAN_VM_PREFIX='your_user'
+   export TITAN_VM_PREFIX='your_vm_prefix'
    export TITAN_DEFAULT_TEMPLATE='your_preferred_template'
 
 4. Download ca.pem. Save the ca.pem to your preferred path and set TITAN_CA_FILE correctly. For example, export TITAN_CA_FILE='/root/ca.pem'
@@ -71,3 +72,7 @@ or
    | Disks       | ['cchen-7u5-template_Disk1', 'ee9e366f-6930-4ab2-9eb7-095e4c22b0c7', '40G']           |
    | Active Nics | ['nic1', '00:1a:4a:16:02:41', 'bcda0f88-eae7-4234-a897-5dafecc5856b', '10.72.37.242'] |
    +-------------+---------------------------------------------------------------------------------------+
+
+.. image:: demo/titan_demo_10M.gif
+
+
