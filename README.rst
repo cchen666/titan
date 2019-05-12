@@ -1,6 +1,7 @@
 README
 ------
 
+.. image:: images/ball1.gif
 
 1. Install our code in virtualenv or user directory (not recommended to install the python package globally)
 
@@ -72,7 +73,4 @@ or
    | Disks       | ['cchen-7u5-template_Disk1', 'ee9e366f-6930-4ab2-9eb7-095e4c22b0c7', '40G']           |
    | Active Nics | ['nic1', '00:1a:4a:16:02:41', 'bcda0f88-eae7-4234-a897-5dafecc5856b', '10.72.37.242'] |
    +-------------+---------------------------------------------------------------------------------------+
-
-.. image:: demo/titan_demo_10M.gif
-
 
