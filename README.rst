@@ -1,7 +1,6 @@
 README
 ------
 
--  
 
 1. Install our code in virtualenv or user directory (not recommended to install the python package globally)
 
@@ -9,9 +8,7 @@ README
 
    pip install titan-rhv --user
 
--
-
-   or
+or
 
 ::
 
@@ -19,11 +16,7 @@ README
    cd ~/titan-rhv
    pip install titan-rhv
 
--  
-
 2. pycurl (which is one of the dependencies) is not easy to install and the errors could be quite different for both MacOS and Linux. Use google :)
-
--  
 
 3. Create a ``titanrc`` to load the environment variables. You can
       appened the content in your ~/.bash_profile (MacOS) or ~/.bashrc
@@ -38,9 +31,7 @@ README
    export TITAN_VM_PREFIX='your_user'
    export TITAN_DEFAULT_TEMPLATE='your_preferred_template'
 
--  
-
-   4. Download ca.pem. Save the ca.pem to your preferred path and set
+4. Download ca.pem. Save the ca.pem to your preferred path and set
       TITAN_CA_FILE correctly. For example, export
       TITAN_CA_FILE=‘/root/ca.pem’
 
@@ -49,9 +40,7 @@ README
    $ wget '<Your RHV URL>/ovirt-engine/services/pki-resource?resource=ca-certificate&format=X509-PEM-CA' --no-check-certificate
    $ mv pki-resource\?resource\=ca-certificate\&format\=X509-PEM-CA ca.pem
 
--  
-
-   5. Some examples
+5. Some examples
 
 ::
 
